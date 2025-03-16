@@ -1,0 +1,176 @@
+
+.contacto{
+    display: flex;
+    margin: 2%;
+}
+.cabecera-contacto{
+    text-align: center;
+    font-size: 50px;
+    border-top: 2px solid var(--color-principal);
+    border-bottom: 2px solid var(--color-principal);
+    padding: 20px;
+    text-shadow: 4px 4px 4px gray;
+}
+.info-contacto{
+    width: 50%;
+    margin-right: 25px;
+}
+.info-contacto h3{
+    font-weight:900;
+    margin-bottom: 10px;
+}
+.redes-sociales{
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #9c693a, #a87e4e);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 3px solid #b57f4e;
+    left: 25%;
+}
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.redes-sociales .logo:hover{
+    animation: girar 1s;
+}
+.whatsapp{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.whatsapp:hover{
+    animation: girar 1s;
+}
+.twitter{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5%;
+}
+.twitter:hover{
+    animation: girar 1s;
+}
+.instagram{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+.instagram:hover{
+    animation: girar 1s;
+}
+.telegram{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+}
+.telegram:hover{
+    animation: girar 1s;
+}
+.facebook{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+}
+.facebook:hover{
+    animation: girar 1s;
+}
+.formulario{
+    width: 50%;
+}
+
+.info-contacto h3{
+    font-size: 30px;
+}
+.info-contacto p:nth-child(2){
+    font-weight: bold;
+    font-size: 16px;
+}
+.info-contacto p:nth-child(3){
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.caja-contacto h4{
+    font-size: 22px;
+    text-decoration: underline;
+    margin: 0px;
+}
+.caja-contacto p{
+    margin: 15px;
+}
+.caja-contacto p i{
+    margin-right: 6px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario form input{
+    border-radius: 5px;
+    padding: 10px;
+}
+.formulario form textarea{
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.formulario form input:invalid {
+    background-color: rgb(247, 173, 173);
+    border: 2px solid rgb(255, 0, 0);
+}
+input:invalid::placeholder {
+    color: red;
+}
+
+
+
+.condiciones{
+    display: flex;
+    font-weight: bold;
+    padding: 15px;
+}
+.condiciones span{
+    color: blue;
+}
+.formulario form button{
+    justify-content: center;
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.formulario form button i{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .contacto{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .info-contacto{
+        width: 80%;
+    }
+    .formulario{
+        width: 80%;
+        border: solid grey 2px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+}
